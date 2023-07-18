@@ -11,10 +11,10 @@ module ALU (
     output wire sgn
 ); 
 
-//获得B的低五位，移位时只需要低五位
+//鑾峰緱B鐨勪綆浜斾綅锛岀Щ浣嶆椂鍙渶瑕佷綆浜斾綅
 wire [4:0] shamt = B[4:0];
 
-//组合逻辑实现运算
+//缁勫悎閫昏緫瀹炵幇杩愮畻
 always @ (*) begin
     case (op)
         `AND :
